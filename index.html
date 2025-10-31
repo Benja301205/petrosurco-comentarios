@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libro de Quejas - Petrosurco</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <img src="logo-quejas.png" alt="Petrosurco" class="logo-top" id="logo">
+
+    <div class="container">
+        <header class="header">
+            <div class="logo-container">
+                <h1 class="main-title">Ayudanos a mejorar</h1>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="intro-section">
+                <p class="subtitle">Dejanos tu comentario</p>
+            </div>
+
+            <form class="complaint-form" id="complaintForm">
+                <div class="form-group">
+                    <label for="tipo">Tipo de comentario</label>
+                    <select id="tipo" name="tipo">
+                        <option value="">Seleccionar...</option>
+                        <option value="queja">Queja</option>
+                        <option value="sugerencia">Sugerencia</option>
+                        <option value="felicitacion">Felicitación</option>
+                        <option value="consulta">Consulta</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="comentario">Tu comentario *</label>
+                    <textarea id="comentario" name="comentario" rows="8" required placeholder="Contanos tu experiencia..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Enviar</button>
+            </form>
+
+            <div class="success-message" id="successMessage">
+                <div class="success-content">
+                    <svg class="check-icon" viewBox="0 0 24 24">
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                    </svg>
+                    <h3>¡Gracias por tu comentario!</h3>
+                    <p>Hemos recibido tu mensaje y lo revisaremos a la brevedad.</p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 Petrosurco. Todos los derechos reservados.</p>
+            <p class="footer-address">General Pico, La Pampa</p>
+            <p class="powered-by">Powered by <strong>Alertly</strong></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
