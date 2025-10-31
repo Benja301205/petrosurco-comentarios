@@ -17,7 +17,7 @@
 
 body {
     font-family: 'Montserrat', 'Roboto', Arial, sans-serif;
-    background: linear-gradient(to bottom right, #1e3a8a, #2563eb, #3b82f6);
+    background: linear-gradient(135deg, #2B8AF2 0%, #0A64D1 50%, #0046A6 100%);
     color: var(--text-color);
     min-height: 100vh;
     line-height: 1.6;
